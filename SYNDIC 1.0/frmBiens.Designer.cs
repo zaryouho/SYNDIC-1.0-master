@@ -38,7 +38,7 @@
             this.labelCloseBiens.AutoSize = true;
             this.labelCloseBiens.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelCloseBiens.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.labelCloseBiens.Location = new System.Drawing.Point(746, 9);
+            this.labelCloseBiens.Location = new System.Drawing.Point(758, 9);
             this.labelCloseBiens.Name = "labelCloseBiens";
             this.labelCloseBiens.Size = new System.Drawing.Size(18, 18);
             this.labelCloseBiens.TabIndex = 1;
