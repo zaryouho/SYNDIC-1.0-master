@@ -32,25 +32,25 @@
             this.labelCloseFinances = new System.Windows.Forms.Label();
             this.tableLayoutPanelFinanceTitle = new System.Windows.Forms.TableLayoutPanel();
             this.buttonSsEcheances = new System.Windows.Forms.Button();
-            this.buttonSsCotisations = new System.Windows.Forms.Button();
             this.buttonSsDepenses = new System.Windows.Forms.Button();
+            this.buttonSsCotisations = new System.Windows.Forms.Button();
             this.tabControlFinancesEcheances = new System.Windows.Forms.TabControl();
             this.tabPageFinancesCotisations = new System.Windows.Forms.TabPage();
-            this.tabPageFinancesDepenses = new System.Windows.Forms.TabPage();
-            this.tabPageFinancesEcheances = new System.Windows.Forms.TabPage();
             this.panelFinanceCotisationsBottom = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.tabPageFinancesDepenses = new System.Windows.Forms.TabPage();
             this.panelFinanceDepensesBottom = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.tabPageFinancesEcheances = new System.Windows.Forms.TabPage();
             this.panelFinanceEcheancesBottom = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.tableLayoutPanelFinanceTitle.SuspendLayout();
             this.tabControlFinancesEcheances.SuspendLayout();
             this.tabPageFinancesCotisations.SuspendLayout();
-            this.tabPageFinancesDepenses.SuspendLayout();
-            this.tabPageFinancesEcheances.SuspendLayout();
             this.panelFinanceCotisationsBottom.SuspendLayout();
+            this.tabPageFinancesDepenses.SuspendLayout();
             this.panelFinanceDepensesBottom.SuspendLayout();
+            this.tabPageFinancesEcheances.SuspendLayout();
             this.panelFinanceEcheancesBottom.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,29 +122,6 @@
             this.buttonSsEcheances.UseVisualStyleBackColor = false;
             this.buttonSsEcheances.Click += new System.EventHandler(this.buttonSsEcheances_Click);
             // 
-            // buttonSsCotisations
-            // 
-            this.buttonSsCotisations.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSsCotisations.BackColor = System.Drawing.Color.Blue;
-            this.buttonSsCotisations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsCotisations.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsCotisations.FlatAppearance.BorderSize = 0;
-            this.buttonSsCotisations.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
-            this.buttonSsCotisations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.buttonSsCotisations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsCotisations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSsCotisations.ForeColor = System.Drawing.Color.White;
-            this.buttonSsCotisations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsCotisations.Location = new System.Drawing.Point(3, 50);
-            this.buttonSsCotisations.Name = "buttonSsCotisations";
-            this.buttonSsCotisations.Size = new System.Drawing.Size(260, 42);
-            this.buttonSsCotisations.TabIndex = 7;
-            this.buttonSsCotisations.Text = "Cotisations";
-            this.buttonSsCotisations.UseVisualStyleBackColor = false;
-            this.buttonSsCotisations.Click += new System.EventHandler(this.buttonSsCotisations_Click);
-            // 
             // buttonSsDepenses
             // 
             this.buttonSsDepenses.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -168,6 +145,29 @@
             this.buttonSsDepenses.UseVisualStyleBackColor = false;
             this.buttonSsDepenses.Click += new System.EventHandler(this.buttonSsDepenses_Click);
             // 
+            // buttonSsCotisations
+            // 
+            this.buttonSsCotisations.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSsCotisations.BackColor = System.Drawing.Color.Blue;
+            this.buttonSsCotisations.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonSsCotisations.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSsCotisations.FlatAppearance.BorderSize = 0;
+            this.buttonSsCotisations.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
+            this.buttonSsCotisations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.buttonSsCotisations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSsCotisations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSsCotisations.ForeColor = System.Drawing.Color.White;
+            this.buttonSsCotisations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSsCotisations.Location = new System.Drawing.Point(3, 50);
+            this.buttonSsCotisations.Name = "buttonSsCotisations";
+            this.buttonSsCotisations.Size = new System.Drawing.Size(260, 42);
+            this.buttonSsCotisations.TabIndex = 7;
+            this.buttonSsCotisations.Text = "Cotisations";
+            this.buttonSsCotisations.UseVisualStyleBackColor = false;
+            this.buttonSsCotisations.Click += new System.EventHandler(this.buttonSsCotisations_Click);
+            // 
             // tabControlFinancesEcheances
             // 
             this.tabControlFinancesEcheances.Controls.Add(this.tabPageFinancesCotisations);
@@ -190,28 +190,6 @@
             this.tabPageFinancesCotisations.TabIndex = 0;
             this.tabPageFinancesCotisations.Text = "Cotisations";
             this.tabPageFinancesCotisations.UseVisualStyleBackColor = true;
-            // 
-            // tabPageFinancesDepenses
-            // 
-            this.tabPageFinancesDepenses.Controls.Add(this.panelFinanceDepensesBottom);
-            this.tabPageFinancesDepenses.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFinancesDepenses.Name = "tabPageFinancesDepenses";
-            this.tabPageFinancesDepenses.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFinancesDepenses.Size = new System.Drawing.Size(792, 329);
-            this.tabPageFinancesDepenses.TabIndex = 1;
-            this.tabPageFinancesDepenses.Text = "Dépenses";
-            this.tabPageFinancesDepenses.UseVisualStyleBackColor = true;
-            // 
-            // tabPageFinancesEcheances
-            // 
-            this.tabPageFinancesEcheances.Controls.Add(this.panelFinanceEcheancesBottom);
-            this.tabPageFinancesEcheances.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFinancesEcheances.Name = "tabPageFinancesEcheances";
-            this.tabPageFinancesEcheances.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFinancesEcheances.Size = new System.Drawing.Size(792, 329);
-            this.tabPageFinancesEcheances.TabIndex = 2;
-            this.tabPageFinancesEcheances.Text = "Echéances";
-            this.tabPageFinancesEcheances.UseVisualStyleBackColor = true;
             // 
             // panelFinanceCotisationsBottom
             // 
@@ -244,6 +222,17 @@
             this.button1.Text = "Cotisations";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // tabPageFinancesDepenses
+            // 
+            this.tabPageFinancesDepenses.Controls.Add(this.panelFinanceDepensesBottom);
+            this.tabPageFinancesDepenses.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFinancesDepenses.Name = "tabPageFinancesDepenses";
+            this.tabPageFinancesDepenses.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFinancesDepenses.Size = new System.Drawing.Size(792, 329);
+            this.tabPageFinancesDepenses.TabIndex = 1;
+            this.tabPageFinancesDepenses.Text = "Dépenses";
+            this.tabPageFinancesDepenses.UseVisualStyleBackColor = true;
+            // 
             // panelFinanceDepensesBottom
             // 
             this.panelFinanceDepensesBottom.Controls.Add(this.button2);
@@ -270,10 +259,21 @@
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(61, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 42);
+            this.button2.Size = new System.Drawing.Size(259, 42);
             this.button2.TabIndex = 8;
             this.button2.Text = "Dépenses";
             this.button2.UseVisualStyleBackColor = false;
+            // 
+            // tabPageFinancesEcheances
+            // 
+            this.tabPageFinancesEcheances.Controls.Add(this.panelFinanceEcheancesBottom);
+            this.tabPageFinancesEcheances.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFinancesEcheances.Name = "tabPageFinancesEcheances";
+            this.tabPageFinancesEcheances.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFinancesEcheances.Size = new System.Drawing.Size(793, 329);
+            this.tabPageFinancesEcheances.TabIndex = 2;
+            this.tabPageFinancesEcheances.Text = "Echéances";
+            this.tabPageFinancesEcheances.UseVisualStyleBackColor = true;
             // 
             // panelFinanceEcheancesBottom
             // 
@@ -281,7 +281,7 @@
             this.panelFinanceEcheancesBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelFinanceEcheancesBottom.Location = new System.Drawing.Point(3, 266);
             this.panelFinanceEcheancesBottom.Name = "panelFinanceEcheancesBottom";
-            this.panelFinanceEcheancesBottom.Size = new System.Drawing.Size(786, 60);
+            this.panelFinanceEcheancesBottom.Size = new System.Drawing.Size(787, 60);
             this.panelFinanceEcheancesBottom.TabIndex = 8;
             // 
             // button3
@@ -322,10 +322,10 @@
             this.tableLayoutPanelFinanceTitle.PerformLayout();
             this.tabControlFinancesEcheances.ResumeLayout(false);
             this.tabPageFinancesCotisations.ResumeLayout(false);
-            this.tabPageFinancesDepenses.ResumeLayout(false);
-            this.tabPageFinancesEcheances.ResumeLayout(false);
             this.panelFinanceCotisationsBottom.ResumeLayout(false);
+            this.tabPageFinancesDepenses.ResumeLayout(false);
             this.panelFinanceDepensesBottom.ResumeLayout(false);
+            this.tabPageFinancesEcheances.ResumeLayout(false);
             this.panelFinanceEcheancesBottom.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

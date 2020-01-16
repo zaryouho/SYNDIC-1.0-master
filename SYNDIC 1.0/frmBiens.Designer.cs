@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelBiens = new System.Windows.Forms.Label();
             this.labelCloseBiens = new System.Windows.Forms.Label();
+            this.labelBiens = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // labelBiens
-            // 
-            this.labelBiens.AutoSize = true;
-            this.labelBiens.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBiens.Location = new System.Drawing.Point(336, 26);
-            this.labelBiens.Name = "labelBiens";
-            this.labelBiens.Size = new System.Drawing.Size(76, 30);
-            this.labelBiens.TabIndex = 0;
-            this.labelBiens.Text = "BIENS";
             // 
             // labelCloseBiens
             // 
@@ -55,24 +45,38 @@
             this.labelCloseBiens.Text = "X";
             this.labelCloseBiens.Click += new System.EventHandler(this.labelCloseBiens_Click);
             // 
+            // labelBiens
+            // 
+            this.labelBiens.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelBiens.AutoSize = true;
+            this.labelBiens.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBiens.Location = new System.Drawing.Point(316, 9);
+            this.labelBiens.Name = "labelBiens";
+            this.labelBiens.Size = new System.Drawing.Size(76, 30);
+            this.labelBiens.TabIndex = 0;
+            this.labelBiens.Text = "BIENS";
+            this.labelBiens.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmBiens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelCloseBiens);
             this.Controls.Add(this.labelBiens);
+            this.Controls.Add(this.labelCloseBiens);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmBiens";
             this.Text = "frmBiens";
+            this.Load += new System.EventHandler(this.frmBiens_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelBiens;
         private System.Windows.Forms.Label labelCloseBiens;
+        private System.Windows.Forms.Label labelBiens;
     }
 }

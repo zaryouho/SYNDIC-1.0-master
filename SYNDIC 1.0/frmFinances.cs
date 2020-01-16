@@ -44,5 +44,10 @@ namespace SYNDIC_1._0
         {
             buttonSsCotisations.BackColor = Color.Navy;
         }
+
+        private void labelCloseFinances_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

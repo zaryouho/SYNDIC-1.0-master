@@ -61,12 +61,7 @@ namespace SYNDIC_1._0
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void panelContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
         private void OpenFormInPannel(object formChild)
         {
             if (this.panelContainer.Controls.Count > 0)
@@ -109,78 +104,6 @@ namespace SYNDIC_1._0
         {
             OpenFormInPannel(new frmRapportsStatistiques());
         }
-
-        private void buttonBiens_MouseEnter(object sender, EventArgs e)
-        {
-            hidePanelsSubMenus();
-            panelSsBiens.Visible = true;
-        }
-
-        private void buttonBiens_MouseLeave(object sender, EventArgs e)
-        {            
-            hidePanelSubMenus(panelSsBiens);
-        }
-
-        private void panelSsBiens_MouseEnter(object sender, EventArgs e)
-        {
-            panelSsBiens.Visible = true;
-        }
-
-        private void MenuVertical_MouseEnter(object sender, EventArgs e)
-        {
-            hidePanelsSubMenus();
-        }
-
         
-
-        private void panelContainer_MouseEnter(object sender, EventArgs e)
-        {
-            hidePanelsSubMenus();
-        }
-        
-        public void hidePanelsSubMenus()
-        {
-            panelSsBiens.Visible = false;
-            panelSsProprietaires.Visible = false;
-            panelSsFinances.Visible = false;
-            panelSsDocuments.Visible = false;
-        }
-        public void hidePanelSubMenus(Panel panelToHide)
-        {
-            if (Cursor.Position.X < MenuVertical.Location.X + MenuVertical.Width - 1)
-                panelToHide.Visible = false;
-            else
-                panelToHide.Visible = true;
-        }
-
-        private void buttonProprietaires_MouseEnter(object sender, EventArgs e)
-        {
-            panelSsProprietaires.Visible = true;
-        }
-
-        private void buttonProprietaires_MouseLeave(object sender, EventArgs e)
-        {
-            hidePanelSubMenus(panelSsProprietaires);
-        }
-
-        private void buttonFinances_MouseEnter(object sender, EventArgs e)
-        {           
-            panelSsFinances.Visible = true;
-        }
-
-        private void buttonFinances_MouseLeave(object sender, EventArgs e)
-        {
-            hidePanelSubMenus(panelSsFinances);
-        }
-
-        private void buttonDocuments_MouseEnter(object sender, EventArgs e)
-        {
-            panelSsDocuments.Visible = true;
-        }
-
-        private void buttonDocuments_MouseLeave(object sender, EventArgs e)
-        {
-            hidePanelSubMenus(panelSsDocuments);
-        }
     }
 }

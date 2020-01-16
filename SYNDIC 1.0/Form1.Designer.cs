@@ -37,9 +37,6 @@
             this.buttonProprietaires = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonBiens = new System.Windows.Forms.Button();
-            this.panelSsBiens = new System.Windows.Forms.Panel();
-            this.buttonSsBiensEcheances = new System.Windows.Forms.Button();
-            this.buttonSsBiensListe = new System.Windows.Forms.Button();
             this.BarreTitulaire = new System.Windows.Forms.Panel();
             this.btnMinimized = new System.Windows.Forms.PictureBox();
             this.btnMaximized = new System.Windows.Forms.PictureBox();
@@ -47,33 +44,14 @@
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnSlideBar = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.panelSsDocuments = new System.Windows.Forms.Panel();
-            this.buttonSsDocumentsBiens = new System.Windows.Forms.Button();
-            this.buttonSsDocumentsFinance = new System.Windows.Forms.Button();
-            this.buttonSsDocumentsEmploye = new System.Windows.Forms.Button();
-            this.buttonSsDocumentsProprietaires = new System.Windows.Forms.Button();
-            this.panelSsProprietaires = new System.Windows.Forms.Panel();
-            this.buttonSsProprietairesRecette = new System.Windows.Forms.Button();
-            this.panelSsFinances = new System.Windows.Forms.Panel();
-            this.buttonSsFinanceEcheances = new System.Windows.Forms.Button();
-            this.buttonSsFinanceDepenses = new System.Windows.Forms.Button();
-            this.buttonSsFinancesCotisation = new System.Windows.Forms.Button();
-            this.buttonSsProprietairesArchive = new System.Windows.Forms.Button();
-            this.buttonSsProprietairesAjouter = new System.Windows.Forms.Button();
-            this.buttonSsProprietairesListe = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelSsBiens.SuspendLayout();
             this.BarreTitulaire.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimized)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlideBar)).BeginInit();
-            this.panelContainer.SuspendLayout();
-            this.panelSsDocuments.SuspendLayout();
-            this.panelSsProprietaires.SuspendLayout();
-            this.panelSsFinances.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -91,7 +69,6 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(265, 650);
             this.MenuVertical.TabIndex = 0;
-            this.MenuVertical.MouseEnter += new System.EventHandler(this.MenuVertical_MouseEnter);
             // 
             // buttonRapportsStatistiques
             // 
@@ -130,8 +107,6 @@
             this.buttonDocuments.Text = "Documents";
             this.buttonDocuments.UseVisualStyleBackColor = true;
             this.buttonDocuments.Click += new System.EventHandler(this.buttonDocuments_Click);
-            this.buttonDocuments.MouseEnter += new System.EventHandler(this.buttonDocuments_MouseEnter);
-            this.buttonDocuments.MouseLeave += new System.EventHandler(this.buttonDocuments_MouseLeave);
             // 
             // buttonHistoriques
             // 
@@ -170,8 +145,6 @@
             this.buttonFinances.Text = "Finances";
             this.buttonFinances.UseVisualStyleBackColor = true;
             this.buttonFinances.Click += new System.EventHandler(this.buttonFinances_Click);
-            this.buttonFinances.MouseEnter += new System.EventHandler(this.buttonFinances_MouseEnter);
-            this.buttonFinances.MouseLeave += new System.EventHandler(this.buttonFinances_MouseLeave);
             // 
             // buttonProprietaires
             // 
@@ -191,8 +164,6 @@
             this.buttonProprietaires.Text = "Propriétaires";
             this.buttonProprietaires.UseVisualStyleBackColor = true;
             this.buttonProprietaires.Click += new System.EventHandler(this.buttonProprietaires_Click);
-            this.buttonProprietaires.MouseEnter += new System.EventHandler(this.buttonProprietaires_MouseEnter);
-            this.buttonProprietaires.MouseLeave += new System.EventHandler(this.buttonProprietaires_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -222,56 +193,6 @@
             this.buttonBiens.Text = "Biens";
             this.buttonBiens.UseVisualStyleBackColor = true;
             this.buttonBiens.Click += new System.EventHandler(this.buttonBiens_Click);
-            this.buttonBiens.MouseEnter += new System.EventHandler(this.buttonBiens_MouseEnter);
-            this.buttonBiens.MouseLeave += new System.EventHandler(this.buttonBiens_MouseLeave);
-            // 
-            // panelSsBiens
-            // 
-            this.panelSsBiens.BackColor = System.Drawing.Color.Gold;
-            this.panelSsBiens.Controls.Add(this.buttonSsBiensEcheances);
-            this.panelSsBiens.Controls.Add(this.buttonSsBiensListe);
-            this.panelSsBiens.Location = new System.Drawing.Point(1, 68);
-            this.panelSsBiens.Name = "panelSsBiens";
-            this.panelSsBiens.Size = new System.Drawing.Size(211, 84);
-            this.panelSsBiens.TabIndex = 3;
-            this.panelSsBiens.Visible = false;
-            // 
-            // buttonSsBiensEcheances
-            // 
-            this.buttonSsBiensEcheances.BackColor = System.Drawing.Color.Orange;
-            this.buttonSsBiensEcheances.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsBiensEcheances.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsBiensEcheances.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsBiensEcheances.FlatAppearance.BorderSize = 0;
-            this.buttonSsBiensEcheances.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsBiensEcheances.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsBiensEcheances.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsBiensEcheances.ForeColor = System.Drawing.Color.White;
-            this.buttonSsBiensEcheances.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsBiensEcheances.Location = new System.Drawing.Point(0, 41);
-            this.buttonSsBiensEcheances.Name = "buttonSsBiensEcheances";
-            this.buttonSsBiensEcheances.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsBiensEcheances.TabIndex = 8;
-            this.buttonSsBiensEcheances.Text = "Echéances";
-            this.buttonSsBiensEcheances.UseVisualStyleBackColor = false;
-            // 
-            // buttonSsBiensListe
-            // 
-            this.buttonSsBiensListe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsBiensListe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsBiensListe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsBiensListe.FlatAppearance.BorderSize = 0;
-            this.buttonSsBiensListe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsBiensListe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsBiensListe.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsBiensListe.ForeColor = System.Drawing.Color.White;
-            this.buttonSsBiensListe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsBiensListe.Location = new System.Drawing.Point(0, 0);
-            this.buttonSsBiensListe.Name = "buttonSsBiensListe";
-            this.buttonSsBiensListe.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsBiensListe.TabIndex = 6;
-            this.buttonSsBiensListe.Text = "Liste des Biens";
-            this.buttonSsBiensListe.UseVisualStyleBackColor = true;
             // 
             // BarreTitulaire
             // 
@@ -355,258 +276,11 @@
             // 
             // panelContainer
             // 
-            this.panelContainer.Controls.Add(this.panelSsDocuments);
-            this.panelContainer.Controls.Add(this.panelSsProprietaires);
-            this.panelContainer.Controls.Add(this.panelSsBiens);
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(265, 50);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(759, 600);
             this.panelContainer.TabIndex = 2;
-            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
-            this.panelContainer.MouseEnter += new System.EventHandler(this.panelContainer_MouseEnter);
-            // 
-            // panelSsDocuments
-            // 
-            this.panelSsDocuments.BackColor = System.Drawing.Color.Gold;
-            this.panelSsDocuments.Controls.Add(this.buttonSsDocumentsBiens);
-            this.panelSsDocuments.Controls.Add(this.buttonSsDocumentsFinance);
-            this.panelSsDocuments.Controls.Add(this.buttonSsDocumentsEmploye);
-            this.panelSsDocuments.Controls.Add(this.buttonSsDocumentsProprietaires);
-            this.panelSsDocuments.Location = new System.Drawing.Point(1, 221);
-            this.panelSsDocuments.Name = "panelSsDocuments";
-            this.panelSsDocuments.Size = new System.Drawing.Size(211, 166);
-            this.panelSsDocuments.TabIndex = 10;
-            this.panelSsDocuments.Visible = false;
-            // 
-            // buttonSsDocumentsBiens
-            // 
-            this.buttonSsDocumentsBiens.BackColor = System.Drawing.Color.Orange;
-            this.buttonSsDocumentsBiens.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsDocumentsBiens.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsDocumentsBiens.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsDocumentsBiens.FlatAppearance.BorderSize = 0;
-            this.buttonSsDocumentsBiens.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsDocumentsBiens.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsDocumentsBiens.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsDocumentsBiens.ForeColor = System.Drawing.Color.White;
-            this.buttonSsDocumentsBiens.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsDocumentsBiens.Location = new System.Drawing.Point(0, 123);
-            this.buttonSsDocumentsBiens.Name = "buttonSsDocumentsBiens";
-            this.buttonSsDocumentsBiens.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsDocumentsBiens.TabIndex = 10;
-            this.buttonSsDocumentsBiens.Text = "Documents de Biens";
-            this.buttonSsDocumentsBiens.UseVisualStyleBackColor = false;
-            // 
-            // buttonSsDocumentsFinance
-            // 
-            this.buttonSsDocumentsFinance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsDocumentsFinance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsDocumentsFinance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsDocumentsFinance.FlatAppearance.BorderSize = 0;
-            this.buttonSsDocumentsFinance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsDocumentsFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsDocumentsFinance.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsDocumentsFinance.ForeColor = System.Drawing.Color.White;
-            this.buttonSsDocumentsFinance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsDocumentsFinance.Location = new System.Drawing.Point(0, 82);
-            this.buttonSsDocumentsFinance.Name = "buttonSsDocumentsFinance";
-            this.buttonSsDocumentsFinance.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsDocumentsFinance.TabIndex = 9;
-            this.buttonSsDocumentsFinance.Text = "Documents Financiers";
-            this.buttonSsDocumentsFinance.UseVisualStyleBackColor = true;
-            // 
-            // buttonSsDocumentsEmploye
-            // 
-            this.buttonSsDocumentsEmploye.BackColor = System.Drawing.Color.Orange;
-            this.buttonSsDocumentsEmploye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsDocumentsEmploye.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsDocumentsEmploye.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsDocumentsEmploye.FlatAppearance.BorderSize = 0;
-            this.buttonSsDocumentsEmploye.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsDocumentsEmploye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsDocumentsEmploye.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsDocumentsEmploye.ForeColor = System.Drawing.Color.White;
-            this.buttonSsDocumentsEmploye.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsDocumentsEmploye.Location = new System.Drawing.Point(0, 41);
-            this.buttonSsDocumentsEmploye.Name = "buttonSsDocumentsEmploye";
-            this.buttonSsDocumentsEmploye.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsDocumentsEmploye.TabIndex = 8;
-            this.buttonSsDocumentsEmploye.Text = "Documents employées";
-            this.buttonSsDocumentsEmploye.UseVisualStyleBackColor = false;
-            // 
-            // buttonSsDocumentsProprietaires
-            // 
-            this.buttonSsDocumentsProprietaires.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsDocumentsProprietaires.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsDocumentsProprietaires.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsDocumentsProprietaires.FlatAppearance.BorderSize = 0;
-            this.buttonSsDocumentsProprietaires.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsDocumentsProprietaires.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsDocumentsProprietaires.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsDocumentsProprietaires.ForeColor = System.Drawing.Color.White;
-            this.buttonSsDocumentsProprietaires.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsDocumentsProprietaires.Location = new System.Drawing.Point(0, 0);
-            this.buttonSsDocumentsProprietaires.Name = "buttonSsDocumentsProprietaires";
-            this.buttonSsDocumentsProprietaires.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsDocumentsProprietaires.TabIndex = 6;
-            this.buttonSsDocumentsProprietaires.Text = "Documents Propriétaires";
-            this.buttonSsDocumentsProprietaires.UseVisualStyleBackColor = true;
-            // 
-            // panelSsProprietaires
-            // 
-            this.panelSsProprietaires.BackColor = System.Drawing.Color.Gold;
-            this.panelSsProprietaires.Controls.Add(this.buttonSsProprietairesRecette);
-            this.panelSsProprietaires.Controls.Add(this.panelSsFinances);
-            this.panelSsProprietaires.Controls.Add(this.buttonSsProprietairesArchive);
-            this.panelSsProprietaires.Controls.Add(this.buttonSsProprietairesAjouter);
-            this.panelSsProprietaires.Controls.Add(this.buttonSsProprietairesListe);
-            this.panelSsProprietaires.Location = new System.Drawing.Point(1, 119);
-            this.panelSsProprietaires.Name = "panelSsProprietaires";
-            this.panelSsProprietaires.Size = new System.Drawing.Size(211, 165);
-            this.panelSsProprietaires.TabIndex = 9;
-            this.panelSsProprietaires.Visible = false;
-            // 
-            // buttonSsProprietairesRecette
-            // 
-            this.buttonSsProprietairesRecette.BackColor = System.Drawing.Color.Orange;
-            this.buttonSsProprietairesRecette.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsProprietairesRecette.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsProprietairesRecette.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsProprietairesRecette.FlatAppearance.BorderSize = 0;
-            this.buttonSsProprietairesRecette.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsProprietairesRecette.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsProprietairesRecette.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsProprietairesRecette.ForeColor = System.Drawing.Color.White;
-            this.buttonSsProprietairesRecette.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsProprietairesRecette.Location = new System.Drawing.Point(0, 123);
-            this.buttonSsProprietairesRecette.Name = "buttonSsProprietairesRecette";
-            this.buttonSsProprietairesRecette.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsProprietairesRecette.TabIndex = 10;
-            this.buttonSsProprietairesRecette.Text = "Recette";
-            this.buttonSsProprietairesRecette.UseVisualStyleBackColor = false;
-            // 
-            // panelSsFinances
-            // 
-            this.panelSsFinances.BackColor = System.Drawing.Color.Gold;
-            this.panelSsFinances.Controls.Add(this.buttonSsFinanceEcheances);
-            this.panelSsFinances.Controls.Add(this.buttonSsFinanceDepenses);
-            this.panelSsFinances.Controls.Add(this.buttonSsFinancesCotisation);
-            this.panelSsFinances.Location = new System.Drawing.Point(0, 41);
-            this.panelSsFinances.Name = "panelSsFinances";
-            this.panelSsFinances.Size = new System.Drawing.Size(211, 126);
-            this.panelSsFinances.TabIndex = 9;
-            this.panelSsFinances.Visible = false;
-            // 
-            // buttonSsFinanceEcheances
-            // 
-            this.buttonSsFinanceEcheances.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsFinanceEcheances.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsFinanceEcheances.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsFinanceEcheances.FlatAppearance.BorderSize = 0;
-            this.buttonSsFinanceEcheances.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsFinanceEcheances.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsFinanceEcheances.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsFinanceEcheances.ForeColor = System.Drawing.Color.White;
-            this.buttonSsFinanceEcheances.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsFinanceEcheances.Location = new System.Drawing.Point(0, 82);
-            this.buttonSsFinanceEcheances.Name = "buttonSsFinanceEcheances";
-            this.buttonSsFinanceEcheances.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsFinanceEcheances.TabIndex = 9;
-            this.buttonSsFinanceEcheances.Text = "Echéances";
-            this.buttonSsFinanceEcheances.UseVisualStyleBackColor = true;
-            // 
-            // buttonSsFinanceDepenses
-            // 
-            this.buttonSsFinanceDepenses.BackColor = System.Drawing.Color.Orange;
-            this.buttonSsFinanceDepenses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsFinanceDepenses.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsFinanceDepenses.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsFinanceDepenses.FlatAppearance.BorderSize = 0;
-            this.buttonSsFinanceDepenses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsFinanceDepenses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsFinanceDepenses.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsFinanceDepenses.ForeColor = System.Drawing.Color.White;
-            this.buttonSsFinanceDepenses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsFinanceDepenses.Location = new System.Drawing.Point(0, 41);
-            this.buttonSsFinanceDepenses.Name = "buttonSsFinanceDepenses";
-            this.buttonSsFinanceDepenses.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsFinanceDepenses.TabIndex = 8;
-            this.buttonSsFinanceDepenses.Text = "Dépenses";
-            this.buttonSsFinanceDepenses.UseVisualStyleBackColor = false;
-            // 
-            // buttonSsFinancesCotisation
-            // 
-            this.buttonSsFinancesCotisation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsFinancesCotisation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsFinancesCotisation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsFinancesCotisation.FlatAppearance.BorderSize = 0;
-            this.buttonSsFinancesCotisation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsFinancesCotisation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsFinancesCotisation.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsFinancesCotisation.ForeColor = System.Drawing.Color.White;
-            this.buttonSsFinancesCotisation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsFinancesCotisation.Location = new System.Drawing.Point(0, 0);
-            this.buttonSsFinancesCotisation.Name = "buttonSsFinancesCotisation";
-            this.buttonSsFinancesCotisation.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsFinancesCotisation.TabIndex = 6;
-            this.buttonSsFinancesCotisation.Text = "Cotisations";
-            this.buttonSsFinancesCotisation.UseVisualStyleBackColor = true;
-            // 
-            // buttonSsProprietairesArchive
-            // 
-            this.buttonSsProprietairesArchive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsProprietairesArchive.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsProprietairesArchive.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsProprietairesArchive.FlatAppearance.BorderSize = 0;
-            this.buttonSsProprietairesArchive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsProprietairesArchive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsProprietairesArchive.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsProprietairesArchive.ForeColor = System.Drawing.Color.White;
-            this.buttonSsProprietairesArchive.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsProprietairesArchive.Location = new System.Drawing.Point(0, 82);
-            this.buttonSsProprietairesArchive.Name = "buttonSsProprietairesArchive";
-            this.buttonSsProprietairesArchive.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsProprietairesArchive.TabIndex = 9;
-            this.buttonSsProprietairesArchive.Text = "Propriétaires archivées";
-            this.buttonSsProprietairesArchive.UseVisualStyleBackColor = true;
-            // 
-            // buttonSsProprietairesAjouter
-            // 
-            this.buttonSsProprietairesAjouter.BackColor = System.Drawing.Color.Orange;
-            this.buttonSsProprietairesAjouter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsProprietairesAjouter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsProprietairesAjouter.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsProprietairesAjouter.FlatAppearance.BorderSize = 0;
-            this.buttonSsProprietairesAjouter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsProprietairesAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsProprietairesAjouter.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsProprietairesAjouter.ForeColor = System.Drawing.Color.White;
-            this.buttonSsProprietairesAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsProprietairesAjouter.Location = new System.Drawing.Point(0, 41);
-            this.buttonSsProprietairesAjouter.Name = "buttonSsProprietairesAjouter";
-            this.buttonSsProprietairesAjouter.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsProprietairesAjouter.TabIndex = 8;
-            this.buttonSsProprietairesAjouter.Text = "Ajouter un propriétaire";
-            this.buttonSsProprietairesAjouter.UseVisualStyleBackColor = false;
-            // 
-            // buttonSsProprietairesListe
-            // 
-            this.buttonSsProprietairesListe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonSsProprietairesListe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSsProprietairesListe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSsProprietairesListe.FlatAppearance.BorderSize = 0;
-            this.buttonSsProprietairesListe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.buttonSsProprietairesListe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSsProprietairesListe.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.buttonSsProprietairesListe.ForeColor = System.Drawing.Color.White;
-            this.buttonSsProprietairesListe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSsProprietairesListe.Location = new System.Drawing.Point(0, 0);
-            this.buttonSsProprietairesListe.Name = "buttonSsProprietairesListe";
-            this.buttonSsProprietairesListe.Size = new System.Drawing.Size(211, 41);
-            this.buttonSsProprietairesListe.TabIndex = 6;
-            this.buttonSsProprietairesListe.Text = "Liste des Propriétaires";
-            this.buttonSsProprietairesListe.UseVisualStyleBackColor = true;
             // 
             // frmMenuOfficiel
             // 
@@ -622,17 +296,12 @@
             this.Text = "MenuOfficiel";
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelSsBiens.ResumeLayout(false);
             this.BarreTitulaire.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimized)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximized)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaure)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlideBar)).EndInit();
-            this.panelContainer.ResumeLayout(false);
-            this.panelSsDocuments.ResumeLayout(false);
-            this.panelSsProprietaires.ResumeLayout(false);
-            this.panelSsFinances.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -654,23 +323,6 @@
         private System.Windows.Forms.Button buttonHistoriques;
         private System.Windows.Forms.Button buttonFinances;
         private System.Windows.Forms.Button buttonProprietaires;
-        private System.Windows.Forms.Panel panelSsBiens;
-        private System.Windows.Forms.Button buttonSsBiensEcheances;
-        private System.Windows.Forms.Button buttonSsBiensListe;
-        private System.Windows.Forms.Panel panelSsDocuments;
-        private System.Windows.Forms.Button buttonSsDocumentsBiens;
-        private System.Windows.Forms.Button buttonSsDocumentsFinance;
-        private System.Windows.Forms.Button buttonSsDocumentsEmploye;
-        private System.Windows.Forms.Button buttonSsDocumentsProprietaires;
-        private System.Windows.Forms.Panel panelSsProprietaires;
-        private System.Windows.Forms.Button buttonSsProprietairesRecette;
-        private System.Windows.Forms.Panel panelSsFinances;
-        private System.Windows.Forms.Button buttonSsFinanceEcheances;
-        private System.Windows.Forms.Button buttonSsFinanceDepenses;
-        private System.Windows.Forms.Button buttonSsFinancesCotisation;
-        private System.Windows.Forms.Button buttonSsProprietairesArchive;
-        private System.Windows.Forms.Button buttonSsProprietairesAjouter;
-        private System.Windows.Forms.Button buttonSsProprietairesListe;
     }
 }
 
